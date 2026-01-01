@@ -10,8 +10,8 @@ class CategorySeeder extends Seeder
     public function run(): void
     {
         Category::query()->insertOrIgnore([
-            ['name' => 'News', 'created_at' => now(), 'updated_at' => now()],
-            ['name' => 'Tutorials', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'news', 'created_at' => now(), 'updated_at' => now()],
+            ['name' => 'tutorials', 'created_at' => now(), 'updated_at' => now()],
         ]);
     }
 }
